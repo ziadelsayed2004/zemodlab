@@ -300,7 +300,7 @@ ul {
     border-width: 2.5px;
     background-color: var(--main-color);
     color: white;
-    border-radius: 25px;
+    border-radius: 18px;
     text-align: left;
     width: 75%;
     margin-left: 12.5%;
@@ -331,7 +331,7 @@ ul {
         margin-top: 80px;
         font-size: 7.8px;
         font-weight: bold;
-        border-radius: 12px;
+        border-radius: 8px;
         border-width: 2px;    }
 }
 
