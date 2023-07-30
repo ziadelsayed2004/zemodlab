@@ -103,7 +103,7 @@ ul {
     padding: 2.5px;
     position: relative;
     left: 5px;
-    font-size: 9px;
+    font-size: 9.5px;
     margin-right: 12px;
     }
 }
@@ -126,6 +126,8 @@ ul {
         margin: auto;
         display: flex;
         flex-wrap: wrap;
+        margin-left: 5%;
+
     }
 }
 
@@ -138,6 +140,7 @@ ul {
     position: relative;
     color: rgb(255, 255, 255);
     padding: 0 30px;
+    margin-left: 40%;
     overflow: hidden;
     font-size: 18px;
     text-shadow: 2px 2px 2px rgb(25, 142, 112);
@@ -149,7 +152,7 @@ ul {
     .header .main-nav>li>a {
         padding: 5px;
         font-size: 9px;
-        width: 62.5px;
+        width: 75px;
         height: 40px;
     }
 }
