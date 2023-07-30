@@ -309,11 +309,11 @@ ul {
 
 @media (max-width: 767px) {
     .info-box {
-        width: 95%;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        margin-top: 80px;
-        font-size: 8px;
+        width: 100%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        margin-top: 85px;
+        font-size: 7.5px;
         font-weight: bold;
         border-radius: 12px;
         border-width: 2px;
@@ -324,7 +324,7 @@ ul {
     .personal-img {
         width: 60px;
         height: 60px;
-        top: 40px;
+        top: 35px;
         border-width: 2px;
     }
 }
@@ -353,6 +353,13 @@ ul {
     user-select: none;
 }
 
+@media (max-width: 767px) {
+    .fot , .copy-right {
+        font-size: 8px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
  /* Start Animation */
 
 @keyframes up-and-down {
