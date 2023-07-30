@@ -93,8 +93,8 @@ ul {
 
 @media (max-width: 767px) {
     .logo-text {
-    position: fixed;
-    left: 52px;
+    position: relative;
+    left: 5px;
     font-size: 9.5px;
     }
 }
@@ -117,8 +117,6 @@ ul {
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        position: fixed;
-        right: 4px;
     }
 }
 
@@ -326,7 +324,7 @@ ul {
     .personal-img {
         width: 60px;
         height: 60px;
-        top: 45px;
+        top: 40px;
         border-width: 2px;
     }
 }
