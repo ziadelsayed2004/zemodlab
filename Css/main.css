@@ -90,7 +90,7 @@ ul {
     position: relative;
     left: -120px;
     text-shadow: 2px 2px 2px rgb(25, 142, 112);
-    background-color: rgb(195, 215, 210) ;
+    background-color: rgba(205, 225, 210, 0.5) ;
     border-radius: 10px;
     padding: 4px;
     z-index: 2;
@@ -98,6 +98,9 @@ ul {
 
 @media (max-width: 767px) {
     .logo-text {
+    background-color: rgba(205, 225, 210, 0.5) ;
+    border-radius: 8px;
+    padding: 2px;
     position: relative;
     left: 5px;
     font-size: 9px;
