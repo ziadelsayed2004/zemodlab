@@ -324,7 +324,7 @@ ul {
     .personal-img {
         width: 60px;
         height: 60px;
-        top: 35px;
+        top: 40px;
         border-width: 2px;
     }
 }
@@ -355,7 +355,7 @@ ul {
 
 @media (max-width: 767px) {
     .fot , .copy-right {
-        font-size: 8px;
+        font-size: 12px;
         padding-left: 2px;
         padding-right: 2px;
     }
