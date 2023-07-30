@@ -302,9 +302,9 @@ ul {
     color: white;
     border-radius: 25px;
     text-align: left;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
     margin-top: 120px;
     font-size: 20px;
  }
@@ -325,15 +325,14 @@ ul {
 
 @media (max-width: 767px) {
     .info-box {
-        width: 100%;
+        width: 99%;
         margin-left: 0.5%;
         margin-right: 0.5%;
         margin-top: 80px;
-        font-size: 8px;
+        font-size: 7.8px;
         font-weight: bold;
         border-radius: 12px;
-        border-width: 2px;
-    }
+        border-width: 2px;    }
 }
 
 @media (max-width: 767px) {
