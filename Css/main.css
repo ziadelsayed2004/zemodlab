@@ -453,7 +453,7 @@ ul {
 
   @media(max-width: 767px){
     .job-service .service p {
-        margin-top: -10%;
+        margin-top: -5%;
         font-size: 8px;
         font-weight: 500;
       }
