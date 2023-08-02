@@ -408,7 +408,7 @@ ul {
   @media(max-width: 767px)
   {
     .skills-bar .skill .progress-bar {
-        height: 10px;
+        height: 12.5px;
         margin-bottom: 10px;
     }
   }
