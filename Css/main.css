@@ -489,7 +489,7 @@ ul {
   @media (max-width : 767px)
   { .job-service .service {
     width: 100%;
-    height: 12.5vh;
+    height: 8vh;
     margin-bottom: 12.5px;
     border: 2px solid #ddd;
     }
