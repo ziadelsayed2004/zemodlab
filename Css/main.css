@@ -375,6 +375,44 @@ ul {
         padding-right: 2px;
     }
 }
+
+.skills-bar{
+    margin-top: 3%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.skills-bar .skill {
+    margin-bottom: 20px;
+}
+
+.skills-bar .skill h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .skills-bar .skill h3 span {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--main-color);
+  }
+  .skills-bar .skill .progress-bar {
+    height: 25px;
+    background-color: #eee;
+    position: relative;
+  }
+  .skills-bar .skill .progress-bar span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: width 1.5s linear;
+  }
+
  /* Start Animation */
 
 @keyframes up-and-down {
