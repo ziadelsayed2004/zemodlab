@@ -486,8 +486,8 @@ ul {
   }
 
   .job-service .service:hover::before {
-    width: 100%;
-    height: 100%;
+    width: 101%;
+    height: 101% ;
   }
   @media (max-width : 767px)
   { .job-service {
