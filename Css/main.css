@@ -374,6 +374,19 @@ ul {
     color: var(--main-color);
     user-select: none;
   }
+
+  @media(max-width: 767px){
+    .skills-bar .skill h3 {
+        font-size: 11px;
+    }
+  }
+
+  @media(max-width: 767px){
+    .skills-bar .skill h3 span {
+        font-size: 7px;
+    }
+  }
+
   .skills-bar .skill .progress-bar {
     height: 25px;
     background-color: #eee;
