@@ -325,9 +325,9 @@ ul {
 
 @media (max-width: 767px) {
     .info-box {
-        width: 99%;
-        margin-left: 0.5%;
-        margin-right: 0.5%;
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
         margin-top: 80px;
         font-size: 7.8px;
         font-weight: bold;
