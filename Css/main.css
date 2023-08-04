@@ -332,7 +332,20 @@ ul {
         font-size: 7.8px;
         font-weight: bold;
         border-radius: 8px;
-        border-width: 2px;    }
+        border-width: 2px;
+        line-height: 135%;
+        text-align: center;
+        padding-top: 5%;    
+    }
+}
+
+@media(max-width: 767px){
+    .info-box span{
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden;
+        line-height: 0%;
+    }
 }
 
 @media (max-width: 767px) {
