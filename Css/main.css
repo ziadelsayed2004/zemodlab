@@ -333,9 +333,10 @@ ul {
         font-weight: bold;
         border-radius: 8px;
         border-width: 2px;
-        line-height: 135%;
+        line-height: 150%;
         text-align: center;
         padding-top: 5%;    
+        padding-bottom: 1%;    
     }
 }
 
