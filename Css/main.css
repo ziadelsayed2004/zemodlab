@@ -625,12 +625,13 @@ ul {
   { .contact-links .link{
         padding-top: 5px;
         padding-bottom: 10px;
+        margin-left: 18px;
+        margin-right: 18px;
         width: 130px;
         height: 70px;
   }
     
   }
-
 
 
   .fot {
