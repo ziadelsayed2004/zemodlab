@@ -578,7 +578,6 @@ ul {
     { .contact-container .contact-links .contact-grid {
         display: flex;
         width: 100%;
-        flex-direction: column;
         margin-bottom: 0px;
         }
     }
@@ -593,8 +592,8 @@ ul {
     color: white;
     text-shadow: 2px 2px 2px rgb(25, 142, 112);
     margin-top: 12.5px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
     }
 
     .contact-container .contact-links .contact-grid .link a i {
@@ -624,9 +623,10 @@ ul {
 
   @media (max-width: 767px)
   { .contact-links .link{
-        padding-top: 10px;
+        padding-top: 5px;
         padding-bottom: 10px;
-        width: 220px;
+        width: 130px;
+        height: 70px;
   }
     
   }
