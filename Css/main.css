@@ -620,7 +620,7 @@ ul {
     margin-bottom: -10px;
     margin-left: 25px;
     margin-right: 25px;
-    width: 200px;
+    width: 300px;
     height: 60px;
     transition: var(--main-transition);
     }
@@ -638,7 +638,7 @@ ul {
     
   }
 
-  
+
 
   .fot {
     position: fixed;
