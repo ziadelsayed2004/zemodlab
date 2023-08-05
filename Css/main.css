@@ -561,7 +561,7 @@ ul {
 
   @media(max-width: 767px) {
     .contact-container .contact-links {
-        padding-top: 2.5vh;
+        padding-top: 3vh;
         user-select: none;
     }
   }
