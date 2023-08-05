@@ -120,6 +120,7 @@ ul {
     height: 21px;
     margin-top: 3.5px;
     margin-bottom: 3.5px;
+    margin-left: 5px;
     position: static;
     }
 }
@@ -133,7 +134,7 @@ ul {
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        margin-left: 8%;
+        margin-left: 5%;
 
     }
 }
@@ -372,10 +373,16 @@ ul {
 }
 
 
-.skills-bar{
-    margin-top: 3%;
+.skills-bar {
+    margin-top: 4%;
     margin-right: 20%;
     margin-left: 20%;
+}
+
+@media (max-width: 767px){
+    .skills-bar {
+    margin-top: 15%;
+    }
 }
 
 .skills-bar .skill {
