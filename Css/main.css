@@ -448,6 +448,13 @@ ul {
     margin-top: 10vh;
   }
 
+  @media(max-width: 767px)
+  {
+    .job-service {
+        margin-top: 8vh;
+    }
+  }
+
   .job-service .service {
     width: 25%;
     height: 20vh;
