@@ -114,8 +114,8 @@ ul {
 
 @media (max-width: 767px) {
     .logoheader {
-    width: 23px;
-    height: 23px;
+    width: 21px;
+    height: 21px;
     margin-top: 3.5px;
     margin-bottom: 3.5px;
     }
@@ -156,8 +156,8 @@ ul {
     .header .main-nav>li>a {
         padding: 5px;
         font-size: 9px;
-        width: 72.5px;
-        height: 30px;
+        width: 68px;
+        height: 28px;
     }
 }
 
