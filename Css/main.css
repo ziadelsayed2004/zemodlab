@@ -561,7 +561,7 @@ ul {
 
   @media(max-width: 767px) {
     .contact-container .contact-links {
-        padding-top: 3.5vh;
+        padding-top: 2.5vh;
         user-select: none;
     }
   }
@@ -599,13 +599,6 @@ ul {
 
     .contact-container .contact-links .contact-grid .link a i {
         margin-bottom: 2.5px;
-    }
-
-    @media(max-width: 767px)
-    { .contact-container .contact-links .contact-grid .link a {
-        margin-top: 5px;
-        }
-
     }
 
     .contact-links .link {
