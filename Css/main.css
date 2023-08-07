@@ -650,7 +650,7 @@ ul {
     border-width: 0.8px;
     border-radius: 12px;
     box-shadow: 2.5px 2.5px 4px rgb(25, 142, 112);
-    background-color: #f1f1f1;
+    background-color: #90b89f4f;
     transition: var(--main-transition);
   }
 
@@ -670,7 +670,7 @@ ul {
     border-radius: 7px;
     border-style:none ;
     text-align: center;
-    width: 400px;
+    width: 425px;
     margin-top: 8px;
     margin-bottom: 8px;
     padding: 2.5px;
@@ -683,7 +683,7 @@ ul {
     border-radius: 7px;
     border-style:none ;
     text-align: center;
-    width: 400px;
+    width: 425px;
     margin-top: 3.5px;
     margin-bottom: 10px;
     padding: 2.5px;
@@ -697,7 +697,7 @@ ul {
     border-radius: 7px;
     border-style:none ;
     text-align: center;
-    width: 400px;
+    width: 425px;
     margin-top: 8px;
     margin-bottom: 8px;
     padding: 2.5px;
@@ -711,7 +711,7 @@ ul {
     width: 75%;
     margin-left: 12.5%;
     margin-right: 12.5%;
-    margin-top: 10vh;
+    margin-top: 12vh;
    }
   }
 
