@@ -7,6 +7,7 @@
 :root {
     --main-color-header: #33cd88;
     --main-color: #90b89f;
+    --mail-box-color: #90b89f80;
     --main-color-alt: #30b882;
     --main-transition: 0.5s;
     --main-padding-top: 70px;
@@ -633,6 +634,95 @@ ul {
     
   }
 
+  .email-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 6vh;
+    padding: 10px;
+    border: var(--main-color);
+    border-style: solid;
+    border-color: rgb(25, 142, 112);
+    border-width: 0.8px;
+    border-radius: 12px;
+    box-shadow: 2.5px 2.5px 4px rgb(25, 142, 112);
+    background-color: #f1f1f1;
+    transition: var(--main-transition);
+  }
+
+  .email-box:hover {
+    background-color: var(--mail-box-color);
+  }
+
+  .email-box ::placeholder {
+    color: white;
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
+}
+
+  .email-box .mail-subject {
+    border-radius: 7px;
+    border-style:none ;
+    text-align: center;
+    width: 400px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 2.5px;
+    box-shadow: 2.5px 2.5px 4px rgb(25, 142, 112);
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  .email-box .mail-body {
+    border-radius: 7px;
+    border-style:none ;
+    text-align: center;
+    width: 400px;
+    margin-top: 3.5px;
+    margin-bottom: 10px;
+    padding: 2.5px;
+    box-shadow: 2.5px 2.5px 4px rgb(25, 142, 112);
+    background-color: var(--main-color);
+    color: white;
+    resize: none;
+  }
+  
+  .email-box .mail-send {
+    border-radius: 7px;
+    border-style:none ;
+    text-align: center;
+    width: 400px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 2.5px;
+    box-shadow: 2.5px 2.5px 4px rgb(25, 142, 112);
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  @media(max-width: 767px)
+  { .email-box {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 10vh;
+   }
+  }
+
+  @media(max-width: 767px)
+  {
+    .email-box .mail-subject ,
+    .email-box .mail-body ,
+    .email-box .mail-send {
+        width: 100%;
+    }
+  }
 
   .fot {
     position: fixed;
