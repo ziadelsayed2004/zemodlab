@@ -555,14 +555,14 @@ ul {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding-top: 5vh;
+    padding-top: 2vh;
     user-select: none;
 
   }
 
   @media(max-width: 767px) {
     .contact-container .contact-links {
-        padding-top: 3vh;
+        padding-top: 1.5vh;
         user-select: none;
     }
   }
@@ -634,6 +634,8 @@ ul {
     
   }
 
+  html { overflow-y: scroll; }
+
   .email-box {
     display: flex;
     flex-direction: column;
@@ -642,7 +644,8 @@ ul {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 6vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     padding: 10px;
     border: var(--main-color);
     border-style: solid;
@@ -653,6 +656,16 @@ ul {
     transition: var(--main-transition);
   }
 
+  .validate-field {
+    display: none;
+    border-radius: 8px !important;
+    font-size: 10px !important;
+    text-align: center !important;
+    height: 21px !important;
+    width: 100% !important;
+    padding: 5px 30px !important;
+  }
+  
   .email-box:hover {
     background-color: var(--mail-box-color);
   }
@@ -663,14 +676,30 @@ ul {
 
   textarea:focus, input:focus{
     outline: none;
-}
+  }
 
-  .email-box .mail-subject {
+  .mail-field {
+        padding-bottom: -20px;
+  }
+  .email-box .mail-name {
     border-radius: 7px;
     border-style:none ;
     text-align: center;
     width: 425px;
-    margin-top: 8px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding: 2.5px;
+    box-shadow: 2.5px 2.5px 4px rgb(25, 142, 112);
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  .email-box .mail-email {
+    border-radius: 7px;
+    border-style:none ;
+    text-align: center;
+    width: 425px;
+    margin-top: 10px;
     margin-bottom: 8px;
     padding: 2.5px;
     box-shadow: 2.5px 2.5px 4px rgb(25, 142, 112);
@@ -683,7 +712,7 @@ ul {
     border-style:none ;
     text-align: center;
     width: 425px;
-    margin-top: 3.5px;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 2.5px;
     box-shadow: 2.5px 2.5px 4px rgb(25, 142, 112);
@@ -710,18 +739,43 @@ ul {
     width: 75%;
     margin-left: 12.5%;
     margin-right: 12.5%;
-    margin-top: 12vh;
+    margin-top: 10vh;
    }
   }
 
   @media(max-width: 767px)
   {
-    .email-box .mail-subject ,
+    .email-box .mail-name ,
+    .email-box .mail-email ,
     .email-box .mail-body ,
     .email-box .mail-send {
         width: 100%;
     }
   }
+
+  .fot-contact{
+    display: inline-block;
+    position: static;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--main-color);
+    padding-bottom: 10px;
+    color:white;
+    text-shadow: 2px 2px 2px rgb(25, 142, 112);
+    user-select: none;
+}
+@media(max-width: 767px){
+    .fot-contact{ 
+    position: fixed; 
+    bottom: 0;
+    font-size: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+    }
+    }
 
   .fot {
     position: fixed;
@@ -750,6 +804,7 @@ ul {
         padding-right: 2px;
     }
 }
+
 
  /* Start Animation */
 
@@ -825,3 +880,73 @@ ul {
 }
 
 /* End Animation */
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+
+  .alert-dismissible {
+    padding-right: 4rem;
+  }
+  
+  .fade {
+    opacity: 0;
+    transition: opacity 0.15s linear;
+  }
+
+  .fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+  }
+
+  .fade.in {
+    opacity: 1;
+  }
+
+  .alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+  }
+
+  .alert-dismissible .close {
+    position: relative;
+    top: -17px;
+    right: -22px;
+    color: inherit;
+  }
+
+  @media(max-width: 767px){
+    .alert-dismissible .close {
+    position: relative;
+    top: -2px;
+    right: -20px;
+    color: inherit;
+    font-size: 17px;
+    padding: 0px;
+  }
+  }
+  .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+  }

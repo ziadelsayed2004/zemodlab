@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="Css/main.css">    
     <link rel="stylesheet" href="Css/normalize.css">
     <link rel="stylesheet" href="Css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title>Ziad ELsayed</title>
 </head>
 
@@ -105,28 +107,67 @@
 
             <div class="email-box">
 
-                <form action="mailto:ziadelsayed2004@gmail.com" method="GET">
+                <form class="contact-form" action="contact.php" method="post">
 
                     <div class="mail-field">
-                      <input class="mail-subject" type="text" placeholder="Subject" name="subject" required />
+                      <input 
+                        class="mail-name" 
+                        type="text" 
+                        placeholder="Your Name" 
+                        name="name" />
+
+                        <div class="alert alert-danger alert-dismissible fade in validate-field">
+                            Name must be more than <span>3</span> characters
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        </div>
+
                     </div>
 
                     <div class="mail-field">
-                      <textarea class="mail-body" rows="4" placeholder="Your Message" name="body" required></textarea>
+                      <input 
+                        class="mail-email" 
+                        type="text" 
+                        placeholder="Your Email" 
+                        name="email" />
+
+                        <div class="alert alert-danger alert-dismissible fade in validate-field">
+                            The email is required field !
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        </div>
+
                     </div>
 
                     <div class="mail-field">
-                      <button class="mail-send" type="submit">Send</button>
+                      <textarea 
+                        class="mail-body" 
+                        rows="4" 
+                        placeholder="Your Message" 
+                        name="message"></textarea>
+
+                        <div class="alert alert-danger alert-dismissible fade in validate-field">
+                            Message must be at least <span>10</span> characters
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        </div>
+
                     </div>
 
-                  </form>
+                    <div class="mail-field">
+                      <button 
+                        class="mail-send" 
+                        type="submit">Send
+                      </button>
+                    </div>
+
+                </form>
+
             </div>
 
         </div>
 
     </div>
     
-    <div class="fot">
+    <div class="fot-contact">
+
         <p> Ziad Elsayed Profile </p>
 
         <div class="copy-right">
@@ -135,6 +176,7 @@
 
     </div>
 
+    <script src="Js/jquery.js"></script>
     <script src="Js/main.js"></script>
 
 
