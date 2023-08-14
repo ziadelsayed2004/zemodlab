@@ -755,7 +755,7 @@ ul {
 
   .fot-contact{
     display: inline-block;
-    position: static;
+    position: absolute;
     bottom: 0;
     align-items: center;
     justify-content: center;
