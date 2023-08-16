@@ -87,7 +87,7 @@ $(function () {
             $(".mail-send").css("margin-top" , "8px");
 
             bodyError = true;
-
+                    
         } else {
 
             $(this).parent().find(".validate-field").fadeOut(200);
