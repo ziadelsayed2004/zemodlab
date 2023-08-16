@@ -23,12 +23,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $headers = "From: " .$mail . "/n/r";
 
+    if (empty($formErrors)) {
+
+        mail("ziadelsayed2004@gmail.com", "Website Conatact", $msg, $headers );
+        
+        echo "Your Email Has Sent Succesfully";
+    }
  }
 
- if (empty($formErrors)) {
-
-    mail("ziadelsayed2004@gmail.com", "Website Conatact", $msg, $headers );
-    
-    echo "Your Email Has Sent Succesfully";
-}
+ 
 ?>
