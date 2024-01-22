@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">    
+        <link rel="stylesheet" href="assets/css/slider.css">    
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="assets/img/zemodlabsvg.svg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Z-WhatsApp</title>
+
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+              <style>
+                .nav-svg{
+                    width: 3.5rem !important;
+                    top: .15rem !important;
+                    display: flex !important;
+                    position: fixed !important;
+                        }
+                .nav__logo{
+                    margin-left: 5rem;
+                          }  
+
+                @media (max-width : 767px) {
+                    .nav-svg{
+                        width: 2rem !important;
+                        display: flex !important;
+                        position: fixed !important;
+                        top: .35rem !important;
+                            }
+                     .nav__logo{
+                        margin-left: 3rem;
+                     }       
+                    }
+            </style>
+
+            <img class="nav-svg" src="assets/img/zemodlabsvg.svg" alt="">
+                <div>
+                    <a href="#" class="nav__logo">Ziad Elsayed - ZE Mod Lab</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About App</a></li>
+                        <li class="nav__item"><a href="#download" class="nav__link">Download App</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Welcome,<br><span class="home__title-background-color">Z-WhatsApp</span><br>Official Website</h1>
+
+                    <a href="#download" class="button">Download Now</a>
+                </div>
+
+                <div class="home__social">
+                    <a target="_blank" href="https://t.me/zemodlab" class="home__social-icon"><i class='bx bxl-telegram'></i></a>
+                    <a target="_blank" href="https://instagram.com/ziadelsayedzaki/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a target="_blank" href="https://github.com/ziadelsayed2004/" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/whatsapp.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT APP =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About App</h2>
+
+                <div class="about__container bd-grid">
+
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-slide" style="width: 14rem;">
+                        <div class="carousel-indicators">
+                          <button style="background-color: black; border-radius: 1rem;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                          </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" style="padding: .5rem;">
+                            <img src="assets/img/slider/1st.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="1st img">
+                          </div>
+                          <div class="carousel-item" style="padding: .5rem;">
+                            <img src="assets/img/slider/2nd.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="2nd img">
+                          </div>
+                          <div class="carousel-item" style="padding: .5rem;">
+                            <img src="assets/img/slider/3th.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="3th img">
+                          </div>
+                          <div class="carousel-item" style="padding: .5rem;">
+                            <img src="assets/img/slider/4th.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="4th img">
+                          </div>
+                          <div class="carousel-item" style="padding: .5rem;">
+                            <img src="assets/img/slider/5th.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="5th img">
+                          </div>
+                          <div class="carousel-item" style="padding: .5rem;">
+                            <img src="assets/img/slider/6th.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="6th img">
+                          </div>
+                          <div class="carousel-item" style="padding: .5rem;">
+                            <img src="assets/img/slider/7th.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="6th img">
+                          </div>
+                          <div class="carousel-item" style="padding: .5rem;">
+                            <img src="assets/img/slider/8th.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="8th img">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span style="margin-left: -8rem; background-color: black; border-radius: 25%;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span style="margin-right: -8rem; background-color: black; border-radius: 25%;" class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Z-WhatsApp By Ziad Elsayed</h2>
+                        <br class="about__text">Is a mod of official WhatsApp with exclusive features.<br><br> This mod has privacy plus options and advaced mod features. <br><br> You can design your app as you like with many home layouts with UI.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== DOWNLIOAD =====-->
+            <section class="download section" id="download">
+                <h2 class="section-title">Download App</h2>
+
+                <div class="download__container bd-grid">
+                    <div class="downloadpkg__box">
+
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p style="font-size: 1.5rem !important;" class="footer__title">Ziad Elsayed - ZE Mod Lab</p>
+            <div class="footer__social">
+                <a target="_blank" href="https://facebook.com/ziadelsayedzaki" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a target="_blank" href="https://instagram.com/ziadelsayedzaki" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a target="_blank" href="https://t.me/Ziad_Elsayed" class="footer__icon"><i class='bx bxl-telegram' ></i></a>
+            </div>
+            <p class="footer__copy"> <a style="text-decoration: none; color: white; font-size: 1rem;" href="mailto:ziadelsayed2004@gmail.com">&#169; ZE Mod Lab. All rigths reserved</a></p>
+        </footer>
+
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
