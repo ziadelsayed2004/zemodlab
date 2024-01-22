@@ -1,0 +1,22 @@
+.carousel-item :hover {
+filter: blur(.1rem) !important;
+transition: .8s;
+box-shadow: 10rem;
+}
+
+.carousel-item {
+    height: 29rem !important;
+    width: 14rem !important;
+}
+
+@media (max-width : 767px) {
+    .carousel-slide {
+        margin-left: 19%;
+        width: 62% !important;
+            }
+    }
+
+.carousel-item img {
+    width: 14rem !important;
+    height: 28rem !important;
+}
