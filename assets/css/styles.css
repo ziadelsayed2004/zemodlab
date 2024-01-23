@@ -396,6 +396,8 @@ img {
 }
 .pkgs-container :hover {
   border-color: rgba(192, 192, 192, 0.5);
+  filter: blur(.075rem);
+  transition: .75s;
 }
 @media screen and (max-width:767px) {
   .downloadpkg__box {
