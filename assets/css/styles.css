@@ -401,14 +401,14 @@ img {
 }
 @media screen and (max-width:767px) {
   .downloadpkg__box {
-    height: 110vh;
+    height: 70vh;
   }
   .pkgs-container { 
     display: flex;
     flex-wrap: wrap;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    height: 110vh;
+    height: 70vh;
   }
   .pkg-box {
     background-color:rgba(192, 192, 192, 0.5);

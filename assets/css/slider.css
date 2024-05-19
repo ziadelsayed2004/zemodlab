@@ -1,5 +1,5 @@
 .carousel-item :hover {
-filter: blur(.1rem) !important;
+filter: blur(.05rem) !important;
 transition: .8s;
 box-shadow: 10rem;
 }
