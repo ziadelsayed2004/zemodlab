@@ -385,7 +385,7 @@ img {
 
 .pkg-box {
    background-color:rgba(192, 192, 192, 0.5);
-   width: 40%;
+   width: 100%;
    padding: 1.5rem;
    border-radius: 2rem;
    border-color: gray;
