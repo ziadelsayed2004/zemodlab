@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400 !important ;600 !important ;700&display=swap") ;
 /*===== VARIABLES CSS =====*/
 :root {
-  --header-height: 3rem !important ;
+  --header-height: 6rem !important ;
   --font-semi: 600 !important ;
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
@@ -141,6 +141,7 @@ img {
 .nav__link {
   position: relative !important ;
   color: #fff !important ;
+  font-size: 1.25rem;
 }
 .nav__link:hover {
   position: relative !important ;
@@ -149,13 +150,17 @@ img {
   position: absolute !important ;
   content: "" !important ;
   width: 100% !important ;
-  height: 0.18rem !important ;
+  height: 0.40rem !important ;
+  border-radius: 1rem 1rem 1rem 1rem;
   left: 0 !important ;
   top: 2rem !important ;
   background-color: var(--first-color) !important ;
 }
 .nav__logo {
   color: var(--second-color) !important ;
+}
+.nav-svg {
+  margin-top: 1.5rem !important;
 }
 .nav__toggle {
   color: var(--second-color) !important ;
@@ -168,7 +173,8 @@ img {
   position: absolute !important ;
   content: "" !important ;
   width: 100% !important ;
-  height: 0.18rem !important ;
+  height: 0.40rem !important ;
+  border-radius: 1rem 1rem 1rem 1rem;
   left: 0 !important ;
   top: 2rem !important ;
   background-color: var(--first-color) !important ;
@@ -184,9 +190,16 @@ img {
   position: relative !important ;
   row-gap: 5rem !important ;
   padding: 4rem 0 5rem !important ;
+  margin-bottom: 5vh !important;
 }
 .home__data {
+  margin-top: 5rem !important;
   align-self: center !important ;
+}
+@media (max-width:767px){
+  .home__data{
+    margin-top: 0rem !important;
+  }
 }
 .home__title {
   font-size: var(--big-font-size) !important ;
@@ -292,24 +305,28 @@ img {
   z-index: var(--z-back) !important ;
 }
 .skills__html {
-  width: 95% !important ;
+  width: 100% !important ;
 }
 .skills__css {
-  width: 85% !important ;
+  width: 90% !important ;
 }
-.skills__ux {
-  width: 75% !important ;
+.skills__flutter {
+  width: 80% !important ;
+}
+.skills__java {
+  width: 70% !important ;
 }
 .skills__php {
-  width: 65% !important ;
+  width: 60% !important ;
 }
 .skills__js {
-  width: 55% !important ;
+  width: 50% !important ;
 }
+
 
 .skills__img {
   border-radius: 0.5rem !important ;
-  margin-top: 6.5rem !important ;
+  margin-top: -1rem !important ;
 }
 
 @media screen and (max-width : 767px) {
