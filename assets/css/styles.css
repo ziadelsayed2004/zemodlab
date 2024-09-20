@@ -74,7 +74,8 @@ img {
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative !important ;
-  font-size: var(--h2-font-size) !important ;
+  font-size: 1.5rem !important ;
+  font-weight: 600;
   color: var(--first-color) !important ;
   margin-top: 5rem !important ;
   margin-bottom: var(--mb-4) !important ;
@@ -84,7 +85,8 @@ img {
   position: absolute !important ;
   content: "" !important ;
   width: 64px !important ;
-  height: 0.18rem !important ;
+  height: 0.30rem !important ;
+  border-radius: 1rem;
   left: 0 !important ;
   right: 0 !important ;
   margin: auto !important ;
@@ -111,7 +113,7 @@ img {
   top: 0 !important ;
   left: 0 !important ;
   z-index: var(--z-fixed) !important ;
-  background-color: #fff !important ;
+  background-color: #fffffff4 !important ;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15) !important ;
 }
 
@@ -401,20 +403,21 @@ img {
 }
 
 .pkg-box {
-   background-color:rgba(192, 192, 192, 0.5);
+   background-color:rgba(220, 220, 220, 0.5);
    width: 100%;
    padding: 1.5rem;
    border-radius: 2rem;
-   border-color: gray;
+   border-width: .25rem;
+   border-color: rgb(112, 112, 112);
    border-style: solid;
    text-align: center;
    color: var(--first-color);
-   font-weight: 500;
+   font-weight: 700;
 }
 .pkgs-container :hover {
-  border-color: rgba(192, 192, 192, 0.5);
-  filter: blur(.075rem);
-  transition: .75s;
+  border-color: var(--first-color);
+  background-color: #fff;
+  transition: 1s;
 }
 @media screen and (max-width:767px) {
   .downloadpkg__box {
@@ -577,5 +580,90 @@ img {
   }
   .home__img {
     width: 450px !important ;
+  }
+}
+@media screen and (max-width:767px) {
+  .bx-menu {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: .5rem;
+  }
+}
+.bx {
+  font-weight: 700 !important;
+}
+
+/* pre loader */
+#header, #home ,#about , #contact, #skills, #footer, #download{
+  filter: blur(8px);
+}
+.loader-container{
+  position: relative;
+  animation: hideAnimation 0s ease-in 2.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes hideAnimation {
+  to {
+      visibility: hidden;
+  }
+}
+.loader {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+}
+.loader {
+  position: absolute;
+}
+.loader:before, .loader:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+.loader:before {
+  animation: before 2s infinite;
+}
+.loader:after {
+  animation: after 2s infinite;
+}
+@keyframes before {
+  0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  100% {
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+  }
+  100% {
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
   }
 }

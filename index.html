@@ -13,9 +13,10 @@
 
         <title>Ziad Elsayed</title>
     </head>
-    <body>
+    <body id="body">
+        <div class="loader-container"><div class="loader"></div></div>
         <!--===== HEADER =====-->
-        <header class="l-header">
+        <header class="l-header" id="header">
             <nav class="nav bd-grid">
                 <div>
 
@@ -199,7 +200,7 @@
             </section>
 
             <!--===== WORK =====-->
-            <!-- <section class="work section" id="work">
+            <!-- <section class="work section" id="section work">
                 <h2 class="section-title">Work</h2>
 
                 <div class="work__container bd-grid">
@@ -241,7 +242,7 @@
         </main>
 
         <!--===== FOOTER =====-->
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <p style="font-size: 1.5rem !important;" class="footer__title">Ziad Elsayed - ZE Mod Lab</p>
             <div class="footer__social">
                 <a target="_blank" href="https://facebook.com/ziadelsayedzaki" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
@@ -257,5 +258,25 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+            setTimeout(() => {
+                document.getElementById('header').style.filter = 'none';
+            }, 2500);
+            setTimeout(() => {
+                document.getElementById('home').style.filter = 'none';
+            }, 2500);
+            setTimeout(() => {
+                document.getElementById('about').style.filter = 'none';
+            }, 2500);
+            setTimeout(() => {
+                document.getElementById('skills').style.filter = 'none';
+            }, 2500);
+            setTimeout(() => {
+                document.getElementById('contact').style.filter = 'none';
+            }, 2500);
+            setTimeout(() => {
+                document.getElementById('footer').style.filter = 'none';
+            }, 2500);
+        </script>
     </body>
 </html>

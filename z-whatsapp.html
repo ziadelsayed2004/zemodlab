@@ -15,56 +15,58 @@
         <title>Z-WhatsApp</title>
 
     </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-              <style>
-                .nav-svg{
-                    width: 4rem !important;
-                    top: .15rem !important;
-                    display: flex !important;
-                    position: fixed !important;
-                        }
-                .nav__logo{
-                    margin-left: 6rem;
-                    font-size: 1.5rem;
-                          }  
+    <body id="body">
+            <div class="loader-container"><div class="loader"></div></div>
 
-                @media (max-width : 767px) {
+            <!--===== HEADER =====-->
+            <header class="l-header" id="header" >
+                <nav class="nav bd-grid">
+                  <style>
                     .nav-svg{
                         width: 4rem !important;
+                        top: .15rem !important;
                         display: flex !important;
                         position: fixed !important;
-                        top: -.5rem !important;
                             }
-                     .nav__logo{
-                        margin-left: 5rem;
-                     }       
-                    }
-            </style>
+                    .nav__logo{
+                        margin-left: 6rem;
+                        font-size: 1.5rem;
+                              }  
 
-            <img class="nav-svg" src="assets/img/zemodlabsvg.svg" alt="">
-                <div>
-                    <a href="#" class="nav__logo">Z-WhatsApp</a>
-                </div>
+                    @media (max-width : 767px) {
+                        .nav-svg{
+                            width: 4rem !important;
+                            display: flex !important;
+                            position: fixed !important;
+                            top: -.5rem !important;
+                                }
+                        .nav__logo{
+                            margin-left: 5rem;
+                        }       
+                        }
+                </style>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About App</a></li>
-                        <li class="nav__item"><a href="#download" class="nav__link">Download App</a></li>
-                        <li class="nav__item"><a href="index.html" class="nav__link">Official Website</a></li>
-                    </ul>
-                </div>
+                <img class="nav-svg" src="assets/img/zemodlabsvg.svg" alt="">
+                    <div>
+                        <a href="#" class="nav__logo">Z-WhatsApp</a>
+                    </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About App</a></li>
+                            <li class="nav__item"><a href="#download" class="nav__link">Download App</a></li>
+                            <li class="nav__item"><a href="index.html" class="nav__link">Official Website</a></li>
+                        </ul>
+                    </div>
 
-        <main class="l-main">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="l-main">
 
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
@@ -199,22 +201,39 @@
 
             </section>
 
-        </main>
+            </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p style="font-size: 1.5rem !important;" class="footer__title">Ziad Elsayed - ZE Mod Lab</p>
-            <div class="footer__social">
-                <a target="_blank" href="https://facebook.com/ziadelsayedzaki" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a target="_blank" href="https://instagram.com/ziadelsayedzaki" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a target="_blank" href="https://t.me/Ziad_Elsayed" class="footer__icon"><i class='bx bxl-telegram' ></i></a>
-            </div>
-            <p class="footer__copy"> <a style="text-decoration: none; color: white; font-size: 1rem;" href="mailto:ziadelsayed2004@gmail.com">&#169; ZE Mod Lab. All rigths reserved</a></p>
-        </footer>
+            <!--===== FOOTER =====-->
+            <footer class="footer" id="footer" >
+                <p style="font-size: 1.5rem !important;" class="footer__title">Ziad Elsayed - ZE Mod Lab</p>
+                <div class="footer__social">
+                    <a target="_blank" href="https://facebook.com/ziadelsayedzaki" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                    <a target="_blank" href="https://instagram.com/ziadelsayedzaki" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                    <a target="_blank" href="https://t.me/Ziad_Elsayed" class="footer__icon"><i class='bx bxl-telegram' ></i></a>
+                </div>
+                <p class="footer__copy"> <a style="text-decoration: none; color: white; font-size: 1rem;" href="mailto:ziadelsayed2004@gmail.com">&#169; ZE Mod Lab. All rigths reserved</a></p>
+            </footer>
 
 
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="assets/js/main.js"></script>
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+              setTimeout(() => {
+                  document.getElementById('header').style.filter = 'none';
+              }, 2500);
+              setTimeout(() => {
+                  document.getElementById('home').style.filter = 'none';
+              }, 2500);
+              setTimeout(() => {
+                  document.getElementById('about').style.filter = 'none';
+              }, 2500);
+              setTimeout(() => {
+                  document.getElementById('download').style.filter = 'none';
+              }, 2500);
+              setTimeout(() => {
+                  document.getElementById('footer').style.filter = 'none';
+              }, 2500);
+          </script>
 
     </body>
 </html>
