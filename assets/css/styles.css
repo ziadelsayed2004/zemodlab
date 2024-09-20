@@ -184,6 +184,7 @@ img {
   position: relative !important ;
   row-gap: 5rem !important ;
   padding: 4rem 0 5rem !important ;
+  margin-bottom: 10vh !important;
 }
 .home__data {
   align-self: center !important ;
@@ -292,20 +293,24 @@ img {
   z-index: var(--z-back) !important ;
 }
 .skills__html {
-  width: 95% !important ;
+  width: 100% !important ;
 }
 .skills__css {
-  width: 85% !important ;
+  width: 90% !important ;
 }
-.skills__ux {
-  width: 75% !important ;
+.skills__flutter {
+  width: 80% !important ;
+}
+.skills__java {
+  width: 70% !important ;
 }
 .skills__php {
-  width: 65% !important ;
+  width: 60% !important ;
 }
 .skills__js {
-  width: 55% !important ;
+  width: 50% !important ;
 }
+
 
 .skills__img {
   border-radius: 0.5rem !important ;
