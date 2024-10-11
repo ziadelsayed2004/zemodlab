@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400 !important ;600 !important ;700&display=swap") ;
 /*===== VARIABLES CSS =====*/
 :root {
-  --header-height: 5rem !important ;
+  --header-height: 4.5rem !important ;
   --font-semi: 400 !important ;
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
@@ -162,7 +162,7 @@ img {
   color: var(--second-color) !important ;
 }
 .nav-svg {
-  margin-top: 1rem !important;
+  margin-top: 0.75rem !important;
 }
 .nav__toggle {
   color: var(--second-color) !important ;
@@ -172,7 +172,7 @@ img {
 .toggle{
   width: 10%;
   position: absolute;
-  top: 1.25rem;
+  top: 1rem;
   right: 1rem;
 }
 
@@ -403,13 +403,13 @@ img {
 .pkgs-container { 
   display: flex;
   justify-content: space-between;
-  height: 65vh;
+  height: 55vh;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
 .pkg-box {
-   background-color:rgba(220, 220, 220, 0.5);
+   background-color:rgba(220, 220, 220, 0.2);
    width: 100%;
    padding: 1.5rem;
    border-radius: 2rem;
