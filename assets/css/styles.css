@@ -169,6 +169,12 @@ img {
   font-size: 1.5rem !important ;
   cursor: pointer !important ;
 }
+.toggle{
+  width: 10%;
+  position: absolute;
+  top: 1.25rem;
+  right: 1rem;
+}
 
 /*Active menu*/
 .active-link::after {
@@ -619,13 +625,18 @@ img {
 .loader:before, .loader:after {
   content: "";
   position: absolute;
-  top: 42.5%;
+  top: 50%;
   left: 50%;
   display: block;
   width: 0.5em;
   height: 0.5em;
   border-radius: 0.25em;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 767px){
+  .loader:before, .loader:after {
+    top: 42.5%;
+  }
 }
 .loader:before {
   animation: before 2s infinite;
